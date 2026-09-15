@@ -1,0 +1,3765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adequação à Polícia Federal | Guia para Empresas de Monitoramento | Segware</title>
+
+<meta
+  name="description"
+  content="Guia Segware sobre o Estatuto da Segurança Privada, adequação à Polícia Federal, CNAE 80.20-0/01, empresas de monitoramento eletrônico, autorização de funcionamento, prazos, impactos e dúvidas frequentes."
+>
+
+<style>
+/* =========================================================
+   GUIA SEGWARE — ADEQUAÇÃO À POLÍCIA FEDERAL
+   Versão: 15/09/2026
+   ========================================================= */
+
+:root {
+  --segware-deep: #073f52;
+  --segware-dark: #075469;
+  --segware-primary: #08768d;
+  --segware-medium: #118ba1;
+  --segware-cyan: #20a6b8;
+  --segware-light: #dff4f7;
+  --segware-extra-light: #f3fafb;
+
+  --ink: #18323b;
+  --muted: #61747b;
+  --line: #dbe7ea;
+  --white: #ffffff;
+
+  --green: #16896d;
+  --green-bg: #eaf8f4;
+
+  --yellow: #b27700;
+  --yellow-bg: #fff6dc;
+
+  --red: #c74343;
+  --red-bg: #fff0f0;
+
+  --blue-bg: #eaf7fa;
+
+  --shadow:
+    0 10px 30px rgba(7, 63, 82, 0.08);
+
+  --radius: 18px;
+  --radius-sm: 12px;
+  --max: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #f6f9fa;
+  font-family:
+    Montserrat,
+    "Segoe UI",
+    Arial,
+    Helvetica,
+    sans-serif;
+  line-height: 1.62;
+}
+
+a {
+  color: var(--segware-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--segware-deep);
+}
+
+strong {
+  color: #163843;
+}
+
+.container {
+  width: min(var(--max), calc(100% - 40px));
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HERO / IDENTIDADE
+   ========================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(
+      circle at 75% 25%,
+      rgba(50, 194, 210, 0.30),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 15% 110%,
+      rgba(25, 166, 184, 0.22),
+      transparent 35%
+    ),
+    linear-gradient(
+      118deg,
+      #05657d 0%,
+      #08778e 47%,
+      #07536a 100%
+    );
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 50%;
+}
+
+.hero::before {
+  width: 620px;
+  height: 620px;
+  right: -210px;
+  top: -290px;
+}
+
+.hero::after {
+  width: 380px;
+  height: 380px;
+  right: 100px;
+  top: -190px;
+}
+
+.network {
+  position: absolute;
+  inset: 0;
+  opacity: .18;
+  background-image:
+    linear-gradient(
+      30deg,
+      transparent 48%,
+      rgba(255,255,255,.23) 49%,
+      transparent 50%
+    ),
+    linear-gradient(
+      150deg,
+      transparent 48%,
+      rgba(255,255,255,.17) 49%,
+      transparent 50%
+    );
+  background-size: 170px 170px;
+  pointer-events: none;
+}
+
+.hero-top {
+  position: relative;
+  z-index: 2;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: .7px;
+}
+
+.brand-symbol {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  border: 2px solid white;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  position: relative;
+}
+
+.brand-symbol::after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border: 1.4px solid rgba(255,255,255,.7);
+  left: 4px;
+  top: 4px;
+  border-radius: 2px;
+}
+
+.anniversary {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  padding: 7px 12px;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(255,255,255,.07);
+}
+
+.anniversary b {
+  color: white;
+  font-size: 18px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 74px 0 80px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  align-items: end;
+  gap: 55px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 12px;
+  margin-bottom: 17px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.18);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 0 0 22px;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.hero-lead {
+  max-width: 770px;
+  margin: 0;
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(255,255,255,.88);
+}
+
+.hero-tagline {
+  padding: 24px;
+  border-left: 3px solid #6ed1dc;
+  background: rgba(3,44,57,.25);
+  backdrop-filter: blur(5px);
+  border-radius: 0 16px 16px 0;
+}
+
+.hero-tagline small {
+  display: block;
+  margin-bottom: 7px;
+  color: rgba(255,255,255,.65);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 700;
+}
+
+.hero-tagline strong {
+  display: block;
+  color: white;
+  font-size: 24px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.hero-meta {
+  position: relative;
+  z-index: 2;
+  padding: 14px 0;
+  background: rgba(4,44,57,.30);
+  font-size: 12px;
+  color: rgba(255,255,255,.75);
+}
+
+.hero-meta .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 9px 22px;
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO
+   ========================================================= */
+
+.guide-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 5px 20px rgba(7,63,82,.05);
+}
+
+.guide-nav-inner {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.guide-nav a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: #3f5c65;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 11px;
+  border-radius: 9px;
+}
+
+.guide-nav a:hover {
+  color: var(--segware-primary);
+  background: var(--segware-extra-light);
+}
+
+.print-btn {
+  margin-left: auto;
+  flex: 0 0 auto;
+  appearance: none;
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 13px;
+  cursor: pointer;
+  background: var(--segware-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   CONTEÚDO
+   ========================================================= */
+
+main {
+  padding: 38px 0 75px;
+}
+
+section {
+  scroll-margin-top: 85px;
+  margin: 0 0 62px;
+}
+
+.section-heading {
+  margin-bottom: 25px;
+}
+
+.section-kicker {
+  margin-bottom: 7px;
+  color: var(--segware-primary);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 11px;
+  color: var(--segware-deep);
+  font-size: clamp(27px, 4vw, 41px);
+  line-height: 1.12;
+  letter-spacing: -.8px;
+}
+
+h3 {
+  color: var(--segware-dark);
+  line-height: 1.25;
+}
+
+.section-heading p {
+  max-width: 900px;
+  color: var(--muted);
+  font-size: 16px;
+  margin: 0;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.callout {
+  padding: 20px 22px;
+  border-radius: var(--radius-sm);
+}
+
+.callout h3 {
+  margin-top: 0;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
+}
+
+.callout.info {
+  background: var(--blue-bg);
+  border: 1px solid #bee3e9;
+}
+
+.callout.warning {
+  background: var(--yellow-bg);
+  border: 1px solid #f0d483;
+}
+
+.callout.danger {
+  background: var(--red-bg);
+  border: 1px solid #f0bcbc;
+}
+
+.callout.success {
+  background: var(--green-bg);
+  border: 1px solid #bfe5d8;
+}
+
+
+/* =========================================================
+   RESPOSTA RÁPIDA
+   ========================================================= */
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.quick-answer {
+  padding: 27px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-answer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: var(--segware-primary);
+}
+
+.quick-answer.red::before {
+  background: #d95252;
+}
+
+.quick-answer .question {
+  margin: 0 0 10px;
+  color: #718087;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.quick-answer h3 {
+  margin: 0 0 12px;
+  color: var(--segware-deep);
+  font-size: 22px;
+}
+
+.answer-badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  color: #116552;
+  background: var(--green-bg);
+  border: 1px solid #bfe5d8;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.answer-badge.attention {
+  color: #925e00;
+  background: var(--yellow-bg);
+  border-color: #ebd282;
+}
+
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.timeline {
+  position: relative;
+  margin: 28px 0 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 11px;
+  bottom: 11px;
+  width: 2px;
+  background: #bfe1e6;
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  background: var(--segware-primary);
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 0 0 6px #eef8fa;
+}
+
+.timeline-content {
+  padding: 4px 0 17px;
+}
+
+.timeline-content time {
+  color: var(--segware-primary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.timeline-content h3 {
+  margin: 2px 0 5px;
+}
+
+.timeline-content p {
+  margin: 0;
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   TABELAS
+   ========================================================= */
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  background: white;
+}
+
+table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background: white;
+}
+
+thead {
+  background: var(--segware-deep);
+  color: white;
+}
+
+th,
+td {
+  padding: 16px 17px;
+  vertical-align: top;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+th {
+  font-size: 12px;
+  letter-spacing: .02em;
+}
+
+td {
+  font-size: 14px;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+tbody tr:hover {
+  background: #f9fcfd;
+}
+
+.status {
+  display: inline-flex;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.status.yes {
+  color: #0e6d54;
+  background: #e6f7f1;
+}
+
+.status.no {
+  color: #4f6d75;
+  background: #eef4f5;
+}
+
+.status.review {
+  color: #8c5e00;
+  background: #fff2c7;
+}
+
+
+/* =========================================================
+   CARDS DE IMPACTO
+   ========================================================= */
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.impact-card {
+  padding: 23px;
+}
+
+.icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: var(--segware-light);
+  color: var(--segware-deep);
+  font-weight: 900;
+  font-size: 19px;
+}
+
+.impact-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.impact-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NÚMEROS / REQUIREMENTS
+   ========================================================= */
+
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 20px 0;
+}
+
+.number-box {
+  padding: 19px;
+  border-radius: 14px;
+  background: linear-gradient(150deg, #eef9fb, #fff);
+  border: 1px solid #d2e9ed;
+}
+
+.number-box .big {
+  display: block;
+  color: var(--segware-primary);
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -.7px;
+}
+
+.number-box small {
+  color: #5e747c;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   PASSOS
+   ========================================================= */
+
+.steps {
+  counter-reset: guide-step;
+  display: grid;
+  gap: 13px;
+  margin: 25px 0 0;
+}
+
+.step {
+  counter-increment: guide-step;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 17px;
+  align-items: start;
+  padding: 21px;
+}
+
+.step::before {
+  content: counter(guide-step);
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  background: var(--segware-primary);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.step h3 {
+  margin: 1px 0 6px;
+  font-size: 17px;
+}
+
+.step p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ÁRVORE DE DECISÃO
+   ========================================================= */
+
+.decision {
+  padding: 27px;
+}
+
+.decision-start {
+  padding: 20px;
+  text-align: center;
+  border-radius: 14px;
+  background: var(--segware-deep);
+  color: white;
+}
+
+.decision-start h3 {
+  margin: 0;
+  color: white;
+}
+
+.decision-paths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.path {
+  padding: 19px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.path .path-title {
+  font-weight: 800;
+  color: var(--segware-dark);
+}
+
+.path p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   MATRIZ DE RISCO
+   ========================================================= */
+
+.risk-level {
+  font-weight: 800;
+}
+
+.risk-low {
+  color: var(--green);
+}
+
+.risk-mid {
+  color: var(--yellow);
+}
+
+.risk-high {
+  color: var(--red);
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+.faq-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.faq-search {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #cddde1;
+  background: white;
+  border-radius: 11px;
+  padding: 13px 15px;
+  font: inherit;
+  outline: none;
+}
+
+.faq-search:focus {
+  border-color: var(--segware-primary);
+  box-shadow: 0 0 0 3px rgba(17,139,161,.10);
+}
+
+.faq-btn {
+  flex: 0 0 auto;
+  appearance: none;
+  border: 1px solid #c9dce0;
+  border-radius: 10px;
+  background: white;
+  color: var(--segware-dark);
+  padding: 12px 13px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details {
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  background: white;
+  overflow: hidden;
+}
+
+summary {
+  position: relative;
+  padding: 18px 52px 18px 19px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--segware-deep);
+  font-weight: 800;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--segware-primary);
+}
+
+details[open] summary::after {
+  content: "–";
+}
+
+details[open] summary {
+  background: #f4fafb;
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-answer {
+  padding: 18px 20px 20px;
+  color: #536b73;
+  font-size: 14px;
+}
+
+.faq-answer p:first-child {
+  margin-top: 0;
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   FONTES
+   ========================================================= */
+
+.sources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.source-box {
+  padding: 24px;
+}
+
+.source-box h3 {
+  margin-top: 0;
+}
+
+.source-list {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.source-list li {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.source-list a {
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  color: white;
+  background: linear-gradient(
+    115deg,
+    var(--segware-deep),
+    var(--segware-primary)
+  );
+}
+
+.footer-main {
+  padding: 47px 0;
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  gap: 35px;
+}
+
+.footer-main h2 {
+  color: white;
+}
+
+.footer-main p {
+  color: rgba(255,255,255,.76);
+}
+
+.footer-contact {
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.09);
+  border: 1px solid rgba(255,255,255,.15);
+}
+
+.footer-contact strong {
+  color: white;
+}
+
+.footer-bottom {
+  padding: 16px 0;
+  border-top: 1px solid rgba(255,255,255,.13);
+  color: rgba(255,255,255,.65);
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   UTILS
+   ========================================================= */
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 13px;
+}
+
+.checklist {
+  padding-left: 21px;
+}
+
+.checklist li {
+  margin-bottom: 8px;
+}
+
+.hidden-by-search {
+  display: none;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 920px) {
+  .hero-content,
+  .quick-grid,
+  .sources-grid,
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .impact-grid,
+  .decision-paths {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .number-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-tagline {
+    max-width: 580px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 25px, var(--max));
+  }
+
+  .hero-top {
+    min-height: 72px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .anniversary {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 50px 0 55px;
+  }
+
+  .impact-grid,
+  .decision-paths,
+  .number-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-answer {
+    padding: 22px;
+  }
+
+  .faq-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .guide-nav-inner {
+    min-height: 55px;
+  }
+
+  .print-btn {
+    display: none;
+  }
+}
+
+
+/* =========================================================
+   IMPRESSÃO
+   ========================================================= */
+
+@media print {
+  body {
+    background: white;
+    font-size: 10pt;
+  }
+
+  .guide-nav,
+  .faq-toolbar,
+  .print-btn {
+    display: none !important;
+  }
+
+  .hero {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .hero-content {
+    padding: 35px 0;
+  }
+
+  .hero h1 {
+    font-size: 33pt;
+  }
+
+  .card,
+  .table-wrap {
+    box-shadow: none;
+  }
+
+  section {
+    break-inside: avoid;
+    margin-bottom: 34px;
+  }
+
+  details {
+    break-inside: avoid;
+  }
+
+  details .faq-answer {
+    display: block !important;
+  }
+
+  details:not([open]) .faq-answer {
+    display: block !important;
+  }
+
+  summary::after {
+    display: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- =======================================================
+     CABEÇALHO
+     ======================================================= -->
+
+<header class="hero">
+  <div class="network"></div>
+
+  <div class="container hero-top">
+    <div class="brand" aria-label="Segware">
+      <span>segware</span>
+    </div>
+
+    <div class="anniversary">
+      <b>25</b> anos
+    </div>
+  </div>
+
+  <div class="container hero-content">
+    <div>
+      <span class="eyebrow">
+        Guia de apoio ao cliente • Segurança privada
+      </span>
+
+      <h1>
+        Adequação das empresas de monitoramento à Polícia Federal
+      </h1>
+
+      <p class="hero-lead">
+        O que mudou com o Estatuto da Segurança Privada,
+        quem é impactado, como funciona a autorização,
+        quais são os principais riscos e o que fazer em relação
+        ao CNAE de monitoramento.
+      </p>
+    </div>
+
+    <div class="hero-tagline">
+      <small>Nosso propósito</small>
+      <strong>
+        Fazemos do mundo<br>
+        um lugar mais seguro.
+      </strong>
+    </div>
+  </div>
+
+  <div class="hero-meta">
+    <div class="container">
+      <span>
+        Material informativo para clientes Segware
+      </span>
+      <span>
+        Atualizado em 15 de setembro de 2026
+      </span>
+    </div>
+  </div>
+</header>
+
+
+<!-- =======================================================
+     NAVEGAÇÃO
+     ======================================================= -->
+
+<nav class="guide-nav" aria-label="Navegação do guia">
+  <div class="container guide-nav-inner">
+    <a href="#resposta">Resposta rápida</a>
+    <a href="#entenda">Entenda a mudança</a>
+    <a href="#quem">Quem é impactado</a>
+    <a href="#impactos">Impactos</a>
+    <a href="#cnae">CNAE</a>
+    <a href="#prazo">Prazo</a>
+    <a href="#adequacao">Como se adequar</a>
+    <a href="#riscos">Riscos</a>
+    <a href="#faq">Dúvidas frequentes</a>
+    <a href="#fontes">Fontes</a>
+
+    <button
+      class="print-btn"
+      type="button"
+      onclick="window.print()"
+    >
+      Imprimir / salvar PDF
+    </button>
+  </div>
+</nav>
+
+
+<main class="container">
+
+  <!-- =====================================================
+       AVISO
+       ===================================================== -->
+
+  <section>
+    <div class="callout warning">
+      <h3>Importante antes de começar</h3>
+
+      <p>
+        Este material tem finalidade informativa e de apoio aos clientes
+        Segware. Ele não substitui parecer jurídico, contábil ou orientação
+        formal da Polícia Federal.
+      </p>
+
+      <p>
+        O enquadramento depende da atividade efetivamente executada,
+        dos contratos mantidos pela empresa e de eventual notificação
+        individual recebida da PF. Se a sua empresa recebeu uma notificação,
+        <strong>o prazo e as instruções daquele documento devem ser tratados
+        como prioridade operacional</strong>.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       RESPOSTA DIRETA
+       ===================================================== -->
+
+  <section id="resposta">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        O ponto que mais gera dúvidas
+      </div>
+
+      <h2>
+        Resposta rápida para o cenário apresentado
+      </h2>
+
+      <p>
+        Estas são as duas respostas essenciais para empresas que estão
+        avaliando a adequação à nova regulamentação.
+      </p>
+    </div>
+
+    <div class="quick-grid">
+
+      <article class="card quick-answer">
+        <div class="question">
+          “Se eu não me adequar, o sistema da Segware será bloqueado?”
+        </div>
+
+        <span class="answer-badge">
+          Não há previsão normativa de bloqueio do software
+        </span>
+
+        <h3>
+          O risco é regulatório, não um bloqueio automático do Sigma Cloud.
+        </h3>
+
+        <p>
+          Nas normas pesquisadas, não há determinação para que a Segware
+          ou outro fornecedor de tecnologia bloqueie automaticamente sua
+          plataforma caso a empresa de monitoramento ainda não possua
+          autorização da Polícia Federal.
+        </p>
+
+        <p>
+          O que a regulamentação prevê são consequências administrativas
+          para a <strong>atividade de segurança privada exercida sem a
+          autorização aplicável</strong>, como fiscalização, processo
+          administrativo, multas e, quando caracterizada atividade
+          clandestina, determinação de encerramento da prestação.
+        </p>
+
+        <p>
+          Empresas de monitoramento que ainda não eram autorizadas foram
+          incluídas expressamente no período de transição, mas devem observar
+          o cronograma definido pela Polícia Federal e eventuais notificações
+          recebidas.
+        </p>
+      </article>
+
+
+      <article class="card quick-answer red">
+        <div class="question">
+          “Posso retirar o CNAE de monitoramento?”
+        </div>
+
+        <span class="answer-badge attention">
+          Depende da atividade real da empresa
+        </span>
+
+        <h3>
+          Retirar o CNAE é caminho para quem realmente não presta monitoramento.
+        </h3>
+
+        <p>
+          A própria Polícia Federal informa que pode autorizar a exclusão do
+          CNAE de monitoramento. Porém, a alteração deve seguir o procedimento
+          aplicável e não deve ser realizada na Junta Comercial sem a análise
+          prévia exigida pela PF.
+        </p>
+
+        <p>
+          Se a empresa <strong>continua monitorando alarmes, imagens ou outros
+          sistemas eletrônicos de segurança para terceiros</strong>, a simples
+          retirada do CNAE não elimina o enquadramento regulatório.
+        </p>
+
+        <p>
+          A fiscalização considera a atividade que é efetivamente organizada,
+          oferecida, contratada, prestada ou executada — e não apenas o código
+          cadastrado no CNPJ.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="callout info mt-20">
+      <h3>E onde entra a Segware?</h3>
+
+      <p>
+        A Segware fornece tecnologia para apoiar operações de monitoramento
+        e segurança. A autorização de funcionamento perante a Polícia Federal
+        é uma obrigação regulatória da empresa que exerce o serviço sujeito
+        à legislação.
+      </p>
+
+      <p>
+        O uso de uma plataforma de monitoramento, por si só, não substitui
+        nem concede a autorização da PF. Da mesma forma, a legislação
+        pesquisada não estabelece que o fornecedor de software deva bloquear
+        seu sistema por ausência do alvará.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       ENTENDA A MUDANÇA
+       ===================================================== -->
+
+  <section id="entenda">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Parte 1
+      </div>
+
+      <h2>
+        O que é essa adequação e do que estamos falando?
+      </h2>
+
+      <p>
+        O Brasil passou a ter um novo marco legal para a segurança privada.
+        O monitoramento eletrônico, que por muitos anos esteve inserido em
+        um ambiente regulatório menos específico, passou a integrar de forma
+        expressa os serviços submetidos à autorização, controle e fiscalização
+        da Polícia Federal.
+      </p>
+    </div>
+
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot">01</div>
+
+        <div class="timeline-content">
+          <time>10/09/2024</time>
+
+          <h3>Publicação da Lei nº 14.967/2024</h3>
+
+          <p>
+            A lei institui o Estatuto da Segurança Privada e inclui
+            expressamente o monitoramento de sistemas eletrônicos de segurança
+            e o rastreamento de numerário, bens ou valores entre os serviços
+            de segurança privada sujeitos à fiscalização federal.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-dot">02</div>
+
+        <div class="timeline-content">
+          <time>10/06/2026</time>
+
+          <h3>Publicação do Decreto nº 13.012/2026</h3>
+
+          <p>
+            O Decreto regulamenta a Lei e detalha requisitos para autorização,
+            estrutura, profissionais, veículos, funcionamento das empresas
+            de monitoramento, terceirização e escopo das atividades.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-dot">03</div>
+
+        <div class="timeline-content">
+          <time>04/08/2026</time>
+
+          <h3>Publicação da IN DG/PF nº 340/2026</h3>
+
+          <p>
+            A Instrução Normativa da Polícia Federal detalha o procedimento
+            administrativo, a documentação, infraestrutura, fiscalização,
+            profissionais, sanções e regras de transição.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-dot">04</div>
+
+        <div class="timeline-content">
+          <time>Agosto e setembro de 2026</time>
+
+          <h3>Fase operacional de adequação</h3>
+
+          <p>
+            O GESP 3 passou a estar disponível e começaram a circular
+            notificações relatadas pelo mercado para empresas enquadradas em
+            atividades de monitoramento, rastreamento e gerenciamento de
+            riscos. A IN determina que empresas ainda não autorizadas façam o
+            pedido conforme cronograma da Polícia Federal.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item">
+        <div class="timeline-dot">05</div>
+
+        <div class="timeline-content">
+          <time>Referência máxima: 10/09/2027</time>
+
+          <h3>Limite máximo geral de adequação</h3>
+
+          <p>
+            O art. 60 da Lei estabelece até três anos contados da publicação
+            para as adequações, ressalvados prazos específicos.
+          </p>
+
+          <p>
+            Como a publicação original ocorreu no Diário Oficial da União em
+            10/09/2024, este guia utiliza <strong>10/09/2027</strong> como
+            referência para o limite máximo geral. Isso não significa que uma
+            empresa notificada deva esperar até essa data: o cronograma e o
+            prazo indicados pela PF devem ser observados.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="callout warning mt-30">
+      <h3>Por que alguns materiais apresentam datas diferentes?</h3>
+
+      <p>
+        A Lei é datada de 9 de setembro de 2024, mas sua publicação original
+        no Diário Oficial ocorreu em 10 de setembro de 2024. Por isso, algumas
+        publicações setoriais mencionam 09/09/2027, enquanto este material usa
+        como referência a regra legal de três anos contados da publicação.
+      </p>
+
+      <p>
+        Para um caso concreto, principalmente quando houver notificação,
+        confirme o prazo diretamente com a Polícia Federal e com a assessoria
+        jurídica responsável.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       QUEM É IMPACTADO
+       ===================================================== -->
+
+  <section id="quem">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Parte 2
+      </div>
+
+      <h2>
+        Quem é impactado pela nova realidade?
+      </h2>
+
+      <p>
+        O enquadramento deve considerar o que a empresa realmente oferece
+        e executa. Ter equipamentos ou software de segurança não significa,
+        sozinho, que a empresa seja prestadora do serviço regulado.
+      </p>
+    </div>
+
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Cenário</th>
+            <th>Tendência de enquadramento</th>
+            <th>Por quê?</th>
+            <th>Ação recomendada</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>
+              Monitoramento remoto de alarmes de clientes
+            </td>
+
+            <td>
+              <span class="status yes">
+                Sujeito à autorização
+              </span>
+            </td>
+
+            <td>
+              Monitoramento remoto de imóveis está expressamente inserido
+              no serviço regulado.
+            </td>
+
+            <td>
+              Preparar processo de autorização perante a PF.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Videomonitoramento remoto prestado a terceiros
+            </td>
+
+            <td>
+              <span class="status yes">
+                Sujeito à autorização
+              </span>
+            </td>
+
+            <td>
+              Operadores de sistemas eletrônicos e acompanhamento remoto
+              integram o escopo regulado.
+            </td>
+
+            <td>
+              Revisar operação, equipe, contratos e infraestrutura.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Rastreamento de numerário, bens ou valores
+            </td>
+
+            <td>
+              <span class="status yes">
+                Sujeito à autorização
+              </span>
+            </td>
+
+            <td>
+              É atividade expressamente prevista no Estatuto.
+            </td>
+
+            <td>
+              Requerer enquadramento e autorização aplicável.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Venda de alarme, câmeras ou equipamentos sem monitoramento
+            </td>
+
+            <td>
+              <span class="status no">
+                Não automaticamente
+              </span>
+            </td>
+
+            <td>
+              O Decreto diferencia a comercialização isolada da prestação
+              do monitoramento remoto.
+            </td>
+
+            <td>
+              Documentar claramente o escopo comercial e contratual.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Instalação ou manutenção isolada, sem central de monitoramento
+            </td>
+
+            <td>
+              <span class="status no">
+                Não automaticamente
+              </span>
+            </td>
+
+            <td>
+              Instalação e manutenção isoladas, sem monitoramento correspondente,
+              recebem tratamento distinto.
+            </td>
+
+            <td>
+              Verificar CNAE, objeto social e contratos para evitar
+              enquadramento incorreto.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Monitoramento exclusivo do próprio patrimônio e pessoal
+            </td>
+
+            <td>
+              <span class="status no">
+                Dispensa específica
+              </span>
+            </td>
+
+            <td>
+              A IN 340 prevê que monitoramento/rastreamento exclusivo
+              em proveito próprio não caracteriza serviço orgânico sujeito
+              à autorização específica de monitoramento.
+            </td>
+
+            <td>
+              Garantir que não haja venda ou prestação a terceiros.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Portaria remota
+            </td>
+
+            <td>
+              <span class="status review">
+                Analisar o serviço real
+              </span>
+            </td>
+
+            <td>
+              O nome comercial do serviço não resolve o enquadramento.
+              É necessário analisar se há monitoramento de sistemas eletrônicos,
+              atividades de segurança ou apenas serviços típicos de portaria.
+            </td>
+
+            <td>
+              Revisar fluxos operacionais e obter enquadramento jurídico/PF
+              para o caso concreto.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Software, plataforma ou tecnologia fornecida a empresas
+              de monitoramento
+            </td>
+
+            <td>
+              <span class="status review">
+                Depende da execução do serviço
+              </span>
+            </td>
+
+            <td>
+              Tecnologia é parte da infraestrutura operacional, mas a
+              classificação do prestador depende da atividade de segurança
+              que ele efetivamente executa.
+            </td>
+
+            <td>
+              Separar claramente fornecimento de tecnologia da execução
+              do serviço regulado.
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       IMPACTOS
+       ===================================================== -->
+
+  <section id="impactos">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        A nova realidade operacional
+      </div>
+
+      <h2>
+        Principais impactos para empresas de monitoramento
+      </h2>
+
+      <p>
+        A mudança vai muito além de um cadastro. Ela atinge estrutura
+        societária, equipe, operação, infraestrutura, contratos, proteção
+        de dados e relacionamento com clientes.
+      </p>
+    </div>
+
+
+    <div class="impact-grid">
+
+      <article class="card impact-card">
+        <div class="icon">PF</div>
+        <h3>Autorização de funcionamento</h3>
+        <p>
+          O monitoramento eletrônico passa a depender de autorização prévia
+          e alvará publicado no Diário Oficial da União.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">R$</div>
+        <h3>Capital social mínimo</h3>
+        <p>
+          A Lei estabelece R$ 146 mil de capital social mínimo integralizado
+          para empresa de monitoramento, sujeito às revisões previstas
+          na regulamentação.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">CNPJ</div>
+        <h3>CNAE e objeto social</h3>
+        <p>
+          Atos societários, alterações e encerramento relacionados à atividade
+          regulada passam por análise prévia da Polícia Federal antes do
+          registro aplicável.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">👥</div>
+        <h3>Equipe habilitada</h3>
+        <p>
+          Há quantitativos mínimos de supervisores e operadores e, quando
+          houver inspeção técnica externa própria, de técnicos externos.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">24h</div>
+        <h3>Infraestrutura da central</h3>
+        <p>
+          A central deve possuir alimentação elétrica ininterrupta,
+          redundância de comunicação, registros de eventos e suporte técnico
+          durante todo o período de funcionamento.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">🔐</div>
+        <h3>Segurança da informação</h3>
+        <p>
+          Os sistemas devem ser auditáveis, ter controle de acesso,
+          mecanismos contra acessos não autorizados, backups e procedimentos
+          de recuperação.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">🎥</div>
+        <h3>CFTV da própria empresa</h3>
+        <p>
+          A operação deve atender aos requisitos de imagens internas e
+          externas e ao armazenamento mínimo estabelecido pela IN.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">🚗</div>
+        <h3>Inspeção técnica externa</h3>
+        <p>
+          Quando houver operação externa própria, entram requisitos
+          adicionais de técnicos habilitados, veículos/motocicletas,
+          identificação e comunicação.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">↔</div>
+        <h3>Terceirização</h3>
+        <p>
+          O monitoramento ou rastreamento regulado terceirizado deve ocorrer
+          entre empresas que possuam autorização compatível da Polícia Federal.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">LGPD</div>
+        <h3>Proteção de dados</h3>
+        <p>
+          A operação de monitoramento deve observar a legislação de proteção
+          de dados e poderá ser fiscalizada especificamente quanto a imagens
+          e informações de pessoas.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">✓</div>
+        <h3>Fiscalização recorrente</h3>
+        <p>
+          DELESPs e UCVs poderão fiscalizar as instalações, profissionais,
+          documentos, proteção de dados e regularidade operacional.
+        </p>
+      </article>
+
+
+      <article class="card impact-card">
+        <div class="icon">🤝</div>
+        <h3>Impacto também no contratante</h3>
+        <p>
+          A legislação também alcança quem contrata serviço de segurança
+          privada não autorizado, aumentando a importância do alvará na
+          relação comercial.
+        </p>
+      </article>
+
+    </div>
+
+
+    <h3 class="mt-30">
+      Alguns números importantes da regulamentação
+    </h3>
+
+    <div class="number-grid">
+
+      <div class="number-box">
+        <span class="big">R$ 146 mil</span>
+        <small>
+          Capital social mínimo previsto em lei para monitoramento eletrônico.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">2</span>
+        <small>
+          Supervisores de monitoramento, no mínimo.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">4</span>
+        <small>
+          Operadores de sistemas eletrônicos, no mínimo.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">4</span>
+        <small>
+          Técnicos externos, se houver inspeção técnica externa própria.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">2</span>
+        <small>
+          Automóveis ou motocicletas, no mínimo, quando houver atividade externa
+          enquadrada na exigência do Decreto.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">60 dias</span>
+        <small>
+          Armazenamento mínimo das imagens do CFTV das instalações previsto
+          pela IN.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">7 dias</span>
+        <small>
+          Prazo mínimo previsto para preservação de imagens/dados do sistema
+          de monitoramento em ambiente protegido.
+        </small>
+      </div>
+
+      <div class="number-box">
+        <span class="big">5 anos</span>
+        <small>
+          Validade indicada para autorização das empresas que atuam
+          exclusivamente com monitoramento eletrônico.
+        </small>
+      </div>
+
+    </div>
+
+
+    <div class="callout warning">
+      <h3>Atenção aos valores</h3>
+
+      <p>
+        O valor de R$ 146 mil está previsto na Lei como referência de capital
+        social mínimo para a atividade. A própria legislação prevê revisão
+        periódica desses valores.
+      </p>
+
+      <p>
+        Antes de alterar o contrato social ou protocolar o pedido, confirme o
+        valor vigente com a Polícia Federal e com a contabilidade da empresa.
+      </p>
+    </div>
+
+
+    <!-- VTR / PRONTA RESPOSTA -->
+
+    <div class="card callout mt-30">
+      <h3>
+        Um impacto muito importante: VTR, pronta resposta e inspeção externa
+      </h3>
+
+      <p>
+        A nova legislação diferencia <strong>inspeção técnica externa</strong>
+        de vigilância patrimonial.
+      </p>
+
+      <p>
+        O técnico externo de sistemas eletrônicos pode se deslocar ao local
+        para verificar a veracidade de um sinal, registrar a situação e
+        comunicar a central. A legislação veda a esse profissional o porte
+        de arma de fogo, a intervenção direta em ocorrência delituosa e a
+        realização de revista pessoal.
+      </p>
+
+      <p>
+        Já ações como ronda patrimonial com presença dissuasória, proteção
+        ativa de patrimônio ou intervenção direta são tratadas como atividades
+        de segurança privada próprias de outros serviços/profissionais.
+      </p>
+
+      <p>
+        <strong>Na prática:</strong> empresas que atualmente chamam toda a
+        operação externa de “VTR” ou “pronta resposta” devem mapear exatamente
+        o que seus agentes fazem em campo. A nomenclatura interna não define
+        o enquadramento; a atividade executada é que importa.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CNAE
+       ===================================================== -->
+
+  <section id="cnae">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        CNAE 80.20-0/01
+      </div>
+
+      <h2>
+        Retirar, manter ou adequar o CNAE?
+      </h2>
+
+      <p>
+        A resposta depende do modelo de negócio real. O CNAE não deve ser
+        tratado apenas como uma questão cadastral.
+      </p>
+    </div>
+
+
+    <div class="card decision">
+
+      <div class="decision-start">
+        <h3>
+          Sua empresa presta monitoramento eletrônico ou rastreamento
+          para terceiros?
+        </h3>
+      </div>
+
+
+      <div class="decision-paths">
+
+        <div class="path">
+          <div class="path-title">
+            SIM — Prestamos monitoramento
+          </div>
+
+          <p>
+            O caminho não é simplesmente retirar o CNAE. A empresa deve avaliar
+            a manutenção/adequação do objeto social e preparar a autorização de
+            funcionamento perante a Polícia Federal.
+          </p>
+        </div>
+
+
+        <div class="path">
+          <div class="path-title">
+            NÃO — O CNAE ficou no cadastro, mas não prestamos
+          </div>
+
+          <p>
+            A própria PF informa que pode autorizar a exclusão do CNAE de
+            monitoramento. A alteração deve seguir a autorização/prévia análise
+            exigida antes do registro societário aplicável.
+          </p>
+        </div>
+
+
+        <div class="path">
+          <div class="path-title">
+            Só vendemos, instalamos ou fazemos manutenção
+          </div>
+
+          <p>
+            Quando essas atividades são realmente isoladas e não estão
+            acompanhadas da prestação de monitoramento remoto, o Decreto
+            estabelece tratamento distinto. Revise contratos, notas,
+            comunicação comercial, CNAEs e objeto social.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="callout danger mt-20">
+      <h3>O que não é recomendado?</h3>
+
+      <p>
+        Retirar o CNAE 80.20-0/01 apenas para evitar a autorização da Polícia
+        Federal e continuar oferecendo ou executando normalmente monitoramento
+        de terceiros.
+      </p>
+
+      <p>
+        A IN 340 define serviço clandestino com base na organização, oferta,
+        contratação, prestação ou execução da atividade sem a autorização
+        exigida. Portanto, <strong>a realidade operacional prevalece sobre uma
+        simples alteração cadastral</strong>.
+      </p>
+    </div>
+
+
+    <div class="callout info mt-20">
+      <h3>
+        Importante: alterações societárias devem observar a PF
+      </h3>
+
+      <p>
+        A Lei atribui à Polícia Federal competência para autorizar previamente
+        atos constitutivos, alterações e encerramento das empresas sujeitas
+        ao regime de segurança privada.
+      </p>
+
+      <p>
+        Evite registrar uma alteração na Junta Comercial primeiro e tentar
+        regularizar depois. O procedimento correto deve ser validado antes
+        com a PF, a contabilidade e o jurídico da empresa.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PRAZO
+       ===================================================== -->
+
+  <section id="prazo">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Prazo e notificações
+      </div>
+
+      <h2>
+        Posso simplesmente esperar até 2027?
+      </h2>
+
+      <p>
+        Não é a estratégia recomendada. O prazo máximo geral não elimina
+        cronogramas de implementação e notificações individuais.
+      </p>
+    </div>
+
+
+    <div class="quick-grid">
+
+      <article class="card quick-answer">
+        <div class="question">
+          Regra geral
+        </div>
+
+        <h3>
+          Período legal de transição
+        </h3>
+
+        <p>
+          A Lei estabelece limite máximo de três anos contados de sua
+          publicação para as adequações decorrentes do Estatuto, quando não
+          houver prazo específico.
+        </p>
+
+        <p>
+          A IN 340 confirma que essa transição também alcança as empresas de
+          monitoramento e rastreamento que ainda não possuíam autorização.
+        </p>
+      </article>
+
+
+      <article class="card quick-answer red">
+        <div class="question">
+          Regra operacional
+        </div>
+
+        <h3>
+          Há cronograma da Polícia Federal
+        </h3>
+
+        <p>
+          A mesma IN determina que as empresas ainda não autorizadas solicitem
+          a autorização conforme cronograma estabelecido pela PF.
+        </p>
+
+        <p>
+          Se sua empresa recebeu uma notificação indicando mês ou prazo para
+          protocolar a solicitação, <strong>não espere o limite máximo de
+          2027</strong>.
+        </p>
+      </article>
+
+    </div>
+
+
+    <div class="callout warning mt-20">
+      <h3>Recebi uma notificação da Polícia Federal. O que faço?</h3>
+
+      <p>
+        Primeiro, identifique exatamente qual hipótese foi indicada.
+        Relatos setoriais recentes mostram notificações direcionando empresas
+        para um de dois caminhos: solicitar a autorização quando exercem a
+        atividade ou promover a regularização cadastral quando não a exercem.
+      </p>
+
+      <p>
+        Não ignore a comunicação. Encaminhe-a imediatamente para quem cuida
+        da parte societária, contábil e jurídica da empresa e confirme as
+        instruções perante a unidade da Polícia Federal responsável.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       PASSO A PASSO
+       ===================================================== -->
+
+  <section id="adequacao">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Roteiro prático
+      </div>
+
+      <h2>
+        Como iniciar a adequação
+      </h2>
+
+      <p>
+        Abaixo está um roteiro didático de preparação. O processo real deve
+        considerar o enquadramento e o cronograma aplicável a cada empresa.
+      </p>
+    </div>
+
+
+    <div class="steps">
+
+      <article class="card step">
+        <div>
+          <h3>Mapeie o que a empresa realmente faz</h3>
+          <p>
+            Liste monitoramento de alarme, vídeo, rastreamento, portaria
+            remota, instalação, manutenção, venda, locação, inspeção técnica,
+            VTR, rondas, pronta resposta e terceirizações.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Revise os contratos com os clientes</h3>
+          <p>
+            Compare a descrição contratual com aquilo que acontece na prática.
+            Atenção para expressões como monitoramento 24h, pronta resposta,
+            ronda, vigilância, inspeção, intervenção e rastreamento.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Defina o enquadramento regulatório</h3>
+          <p>
+            Determine se a empresa é efetivamente uma prestadora de
+            monitoramento, se apenas comercializa/instala equipamentos ou se
+            possui um CNAE de monitoramento que não corresponde mais à sua
+            atividade real.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Revise CNAE, objeto social e estrutura societária</h3>
+          <p>
+            Faça essa revisão com contabilidade e jurídico. Alterações
+            societárias relacionadas à atividade regulada devem observar a
+            autorização prévia da Polícia Federal.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Valide o capital social</h3>
+          <p>
+            Confira o capital mínimo vigente, sua integralização e os
+            documentos capazes de comprovar os bens e recursos utilizados.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Organize a documentação dos sócios e administradores</h3>
+          <p>
+            A IN exige documentos pessoais, comprovantes e certidões de
+            antecedentes em diferentes esferas, além de análise sobre origem
+            do capital e regularidade da empresa.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Avalie a infraestrutura física e tecnológica</h3>
+          <p>
+            Revise central de monitoramento, energia ininterrupta,
+            redundância de comunicação, registros, CFTV interno e externo,
+            controle de acessos, armazenamento, backups e recuperação de dados.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Planeje o quadro mínimo de profissionais</h3>
+          <p>
+            Considere supervisores e operadores habilitados e, quando houver
+            inspeção técnica externa própria, técnicos externos e a estrutura
+            de veículos correspondente.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Solicite a autorização conforme o canal indicado pela PF</h3>
+          <p>
+            O fluxo passa pela regularização societária aplicável,
+            recolhimento das taxas, cadastro/requerimento no GESP,
+            análise documental e vistoria.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Prepare-se para a vistoria</h3>
+          <p>
+            As instalações físicas devem ser aprovadas e podem ser analisadas
+            quanto à central, infraestrutura, identificação, equipamentos e
+            requisitos definidos pela IN.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Acompanhe até a publicação do alvará</h3>
+          <p>
+            Responda eventuais exigências no prazo e acompanhe o processo até
+            a publicação da autorização de funcionamento no Diário Oficial.
+          </p>
+        </div>
+      </article>
+
+
+      <article class="card step">
+        <div>
+          <h3>Mantenha a conformidade depois da autorização</h3>
+          <p>
+            Regularização não termina no alvará. A empresa continua sujeita a
+            fiscalização, requisitos de profissionais, proteção de dados,
+            infraestrutura, atualização cadastral e renovação.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+
+    <div class="callout info mt-30">
+      <h3>Fluxo resumido divulgado pela própria PF</h3>
+
+      <ol class="checklist">
+        <li>
+          Obter a permissão aplicável para registro/adequação na Junta
+          Comercial.
+        </li>
+        <li>
+          Recolher as taxas correspondentes.
+        </li>
+        <li>
+          Cadastrar a empresa e protocolar o requerimento no GESP.
+        </li>
+        <li>
+          Passar pela vistoria das instalações.
+        </li>
+        <li>
+          Aguardar o alvará publicado no Diário Oficial da União.
+        </li>
+      </ol>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       RISCOS
+       ===================================================== -->
+
+  <section id="riscos">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Não adequação
+      </div>
+
+      <h2>
+        Quais são os riscos?
+      </h2>
+
+      <p>
+        É importante separar a situação de uma empresa dentro do regime de
+        transição e cumprindo o cronograma da PF de uma empresa que continua
+        exercendo atividade regulada sem a autorização exigível.
+      </p>
+    </div>
+
+
+    <div class="table-wrap">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Situação</th>
+            <th>Nível de atenção</th>
+            <th>Possível impacto</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>
+              Empresa em transição, acompanhando o cronograma e preparando
+              a autorização
+            </td>
+
+            <td>
+              <span class="risk-level risk-low">
+                Controlável
+              </span>
+            </td>
+
+            <td>
+              Manter plano de adequação, documentação e acompanhamento do
+              cronograma/notificações.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Empresa notificada que não responde nem inicia a adequação
+            </td>
+
+            <td>
+              <span class="risk-level risk-high">
+                Alto
+              </span>
+            </td>
+
+            <td>
+              Atraso pode comprometer a regularização em tempo hábil e aumentar
+              exposição a fiscalização e sanções.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Retirar CNAE e continuar oferecendo monitoramento normalmente
+            </td>
+
+            <td>
+              <span class="risk-level risk-high">
+                Muito alto
+              </span>
+            </td>
+
+            <td>
+              O enquadramento de clandestinidade considera a atividade
+              efetivamente oferecida ou prestada, e não apenas o CNAE.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Prestação de serviço regulado sem autorização, fora do regime
+              aplicável
+            </td>
+
+            <td>
+              <span class="risk-level risk-high">
+                Crítico
+              </span>
+            </td>
+
+            <td>
+              Pode resultar em auto de encerramento, cessação imediata da
+              atividade e processo administrativo.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Pessoa jurídica envolvida em serviço de segurança privada não
+              autorizado
+            </td>
+
+            <td>
+              <span class="risk-level risk-high">
+                Crítico
+              </span>
+            </td>
+
+            <td>
+              A IN prevê multa de R$ 10 mil a R$ 30 mil para pessoa jurídica
+              que organizar, oferecer, contratar, prestar ou executar serviço
+              não autorizado.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Cliente contratando prestador não autorizado
+            </td>
+
+            <td>
+              <span class="risk-level risk-mid">
+                Relevante
+              </span>
+            </td>
+
+            <td>
+              A regra também alcança a contratação de serviço clandestino.
+              A regularidade do prestador tende a ganhar peso em contratos
+              e processos de contratação.
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="callout danger mt-20">
+      <h3>O que é o auto de encerramento?</h3>
+
+      <p>
+        Quando a fiscalização constata atividade de segurança privada
+        clandestina, a IN prevê a lavratura de auto de encerramento.
+      </p>
+
+      <p>
+        O ato é autoexecutável: a prestação irregular deve cessar a partir
+        da lavratura, sem que o processo administrativo funcione como uma
+        autorização temporária para continuar operando.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FAQ
+       ===================================================== -->
+
+  <section id="faq">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        FAQ
+      </div>
+
+      <h2>
+        Dúvidas frequentes
+      </h2>
+
+      <p>
+        Utilize a busca para localizar rapidamente um assunto.
+      </p>
+    </div>
+
+
+    <div class="faq-toolbar">
+      <input
+        id="faqSearch"
+        class="faq-search"
+        type="search"
+        placeholder="Ex.: CNAE, bloqueio, VTR, prazo, capital..."
+        aria-label="Pesquisar dúvidas frequentes"
+      >
+
+      <button
+        class="faq-btn"
+        type="button"
+        onclick="toggleAllFaq(true)"
+      >
+        Abrir todas
+      </button>
+
+      <button
+        class="faq-btn"
+        type="button"
+        onclick="toggleAllFaq(false)"
+      >
+        Fechar
+      </button>
+    </div>
+
+
+    <div id="faqList">
+
+      <details>
+        <summary>
+          1. A falta de adequação à Polícia Federal vai bloquear o Sigma Cloud?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Não há, nas normas analisadas, determinação para que o Sigma Cloud
+            ou outra solução Segware seja automaticamente bloqueada por falta
+            da autorização da Polícia Federal.
+          </p>
+
+          <p>
+            As consequências previstas são regulatórias e recaem sobre o
+            exercício da atividade de segurança privada: fiscalização,
+            processos administrativos, multas e, quando caracterizada
+            atividade clandestina, encerramento da prestação irregular.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          2. Então uma empresa pode continuar operando normalmente sem fazer nada?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Não. Empresas de monitoramento ainda não autorizadas foram
+            incluídas no período de adequação, mas a IN 340 determina que
+            solicitem a autorização conforme cronograma estabelecido pela
+            Polícia Federal.
+          </p>
+
+          <p>
+            Se houver notificação indicando um período específico, ela deve
+            ser atendida. O prazo máximo de transição não deve ser interpretado
+            como autorização para ignorar o escalonamento da PF.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          3. Qual é o prazo final para a adequação?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A Lei nº 14.967/2024 prevê limite máximo de três anos contados de
+            sua publicação para adequações sem prazo específico.
+          </p>
+
+          <p>
+            A publicação original ocorreu em 10/09/2024, portanto este material
+            utiliza 10/09/2027 como referência máxima geral.
+          </p>
+
+          <p>
+            Atenção: empresas notificadas devem observar o cronograma ou prazo
+            definido pela Polícia Federal, que pode exigir ação muito antes
+            dessa data.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          4. Posso retirar o CNAE 80.20-0/01?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Sim, quando a empresa efetivamente não exerce a atividade de
+            monitoramento e o caminho adequado é corrigir seu cadastro.
+            A própria FAQ da Polícia Federal informa que pode autorizar a
+            exclusão do CNAE de monitoramento.
+          </p>
+
+          <p>
+            A alteração deve seguir a autorização prévia e os procedimentos
+            aplicáveis antes do registro societário.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          5. Posso retirar o CNAE e continuar fazendo monitoramento?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Esse caminho não elimina a obrigação regulatória. A fiscalização
+            olha para a atividade efetivamente organizada, oferecida,
+            contratada, prestada ou executada.
+          </p>
+
+          <p>
+            Se a empresa continua prestando monitoramento remoto de sistemas
+            de segurança a terceiros, retirar o CNAE não transforma essa
+            atividade em uma atividade não regulada.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          6. Nunca usamos o CNAE de monitoramento. O que fazer?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Se o CNAE está cadastrado, mas a empresa nunca prestou a atividade,
+            vale revisar objeto social, contratos, notas fiscais e operação.
+          </p>
+
+          <p>
+            Confirmado que o serviço não é exercido, solicite a orientação/
+            permissão da PF para regularizar o cadastro e excluir o CNAE,
+            conforme o procedimento aplicável.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          7. Só vendo e instalo alarmes e câmeras. Preciso de autorização de monitoramento?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A Lei e o Decreto diferenciam a comercialização, instalação ou
+            manutenção isolada da prestação de monitoramento remoto.
+          </p>
+
+          <p>
+            Portanto, vender ou instalar equipamentos sem prestar o
+            monitoramento correspondente não enquadra automaticamente a
+            empresa como empresa de monitoramento.
+          </p>
+
+          <p>
+            O contrato e a prática precisam refletir essa separação.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          8. Monitoramos apenas as câmeras da nossa própria empresa. Precisamos da autorização?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A IN 340 estabelece que monitoramento de sistemas eletrônicos e
+            rastreamento realizado por empresa ou condomínio exclusivamente
+            em proveito do próprio patrimônio e pessoal não caracteriza o
+            serviço orgânico de monitoramento sujeito à autorização específica.
+          </p>
+
+          <p>
+            A situação muda se o serviço for oferecido ou prestado a terceiros.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          9. Portaria remota precisa de autorização?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A análise não deve ser feita apenas pelo nome “portaria remota”.
+          </p>
+
+          <p>
+            O Estatuto exclui do serviço orgânico os típicos serviços de
+            portaria executados sem arma, mas operações comercializadas como
+            portaria remota podem incorporar monitoramento eletrônico,
+            tratamento de alarmes, verificação de eventos e outras atividades
+            reguladas.
+          </p>
+
+          <p>
+            Por isso, o fluxo real da operação deve ser analisado caso a caso.
+            Não presuma enquadramento ou dispensa apenas pelo nome comercial.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          10. Posso terceirizar minha central de monitoramento?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A regulamentação admite terceirização dos serviços de monitoramento
+            e rastreamento, mas exige que ela ocorra entre pessoas jurídicas
+            devidamente autorizadas para a atividade correspondente.
+          </p>
+
+          <p>
+            A terceirização também não elimina a responsabilidade da empresa
+            contratante perante a Polícia Federal.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          11. Posso terceirizar apenas instalação e manutenção?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Instalação, manutenção e comercialização isoladas recebem
+            tratamento distinto do monitoramento remoto.
+          </p>
+
+          <p>
+            Entretanto, é importante definir contratualmente quem executa
+            cada atividade e não usar uma terceirização meramente formal para
+            mascarar quem efetivamente presta o serviço regulado.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          12. Qual é o capital social mínimo?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A Lei estabelece R$ 146.000,00 como capital social mínimo
+            integralizado para empresas de monitoramento eletrônico.
+          </p>
+
+          <p>
+            Para serviços adicionais autorizados, a Lei prevê acréscimo de
+            R$ 146.000,00 por serviço adicional. Os valores estão sujeitos às
+            revisões previstas na regulamentação, portanto devem ser confirmados
+            antes do protocolo.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          13. Quantas pessoas precisam trabalhar na operação?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Para empresas de monitoramento, a IN estabelece, como quantitativos
+            mínimos, dois supervisores de monitoramento e quatro operadores,
+            com registro e formação aplicáveis.
+          </p>
+
+          <p>
+            Se houver serviço próprio de inspeção técnica externa, também são
+            exigidos quatro técnicos externos.
+          </p>
+
+          <p>
+            A comprovação do efetivo permanente é prevista para até 60 dias
+            após a publicação do alvará de autorização.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          14. A empresa precisa ter veículos?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Se exercer atividade externa própria, o Decreto prevê pelo menos
+            dois automóveis comuns ou motocicletas, identificados/padronizados
+            e com comunicação ininterrupta com a sede, conforme o cenário
+            regulamentado.
+          </p>
+
+          <p>
+            Operações exclusivamente remotas têm tratamento diferente e devem
+            ser avaliadas conforme o serviço efetivamente executado.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          15. Quem pode atender uma ocorrência de alarme no local?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A legislação cria a figura do técnico externo de sistema eletrônico
+            de segurança. Ele pode realizar inspeção técnica para verificar o
+            sinal, registrar a situação e comunicar a central.
+          </p>
+
+          <p>
+            Esse profissional não pode portar arma de fogo, fazer revista
+            pessoal nem intervir diretamente em ocorrência criminosa.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          16. Nossa VTR faz rondas preventivas. Isso é a mesma coisa que inspeção técnica?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Não necessariamente. Inspeção técnica é vinculada à verificação
+            de sinais emitidos pelo sistema.
+          </p>
+
+          <p>
+            Rondas patrimoniais com presença dissuasória e ações ativas de
+            proteção são atividades tratadas pela regulamentação como
+            segurança privada de natureza distinta.
+          </p>
+
+          <p>
+            Se sua operação mistura essas funções, faça uma análise jurídica
+            e operacional detalhada.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          17. A central precisa ter internet redundante e nobreak?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A IN estabelece que a central de monitoramento tenha sistema de
+            alimentação elétrica ininterrupta, comunicação de dados redundante,
+            registro e armazenamento de eventos e suporte técnico capaz de
+            atuar continuamente durante seu funcionamento.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          18. Existem requisitos específicos para segurança dos dados?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Sim. Além de observar a legislação de proteção de dados pessoais,
+            os sistemas de monitoramento devem ser auditáveis, ter controle
+            de acesso, mecanismos para prevenir acessos não autorizados,
+            preservação de informações, backups periódicos e procedimentos
+            de recuperação.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          19. Quanto tempo preciso guardar imagens?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A IN traz requisitos diferentes conforme o tipo de registro.
+            Para o circuito interno e externo das próprias instalações da
+            empresa de monitoramento, prevê armazenamento em tempo real por
+            no mínimo 60 dias.
+          </p>
+
+          <p>
+            Para imagens e dados dos sistemas utilizados no monitoramento
+            remoto, há previsão de preservação em ambiente protegido por pelo
+            menos sete dias, além de backups e recuperação de dados.
+          </p>
+
+          <p>
+            Contratos, outras normas, LGPD ou necessidades probatórias podem
+            demandar prazos adicionais, por isso a política de retenção deve
+            ser validada juridicamente.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          20. A Polícia Federal pode fiscalizar a central?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Sim. A IN estabelece fiscalização das instalações das empresas de
+            monitoramento a qualquer tempo, incluindo regularidade da prestação,
+            profissionais, proteção de dados e imagens e outros requisitos
+            normativos.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          21. Quanto tempo vale a autorização?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A orientação da PF indica prazo geral de dois anos, com exceção
+            das empresas que exercem exclusivamente monitoramento eletrônico,
+            cuja autorização possui validade de cinco anos.
+          </p>
+
+          <p>
+            A renovação também depende da manutenção dos requisitos e deve ser
+            solicitada no prazo correto.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          22. Quais taxas são cobradas?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Na FAQ consultada em setembro de 2026, a Polícia Federal informa,
+            para empresas de serviços de segurança privada, taxa de vistoria
+            de R$ 4.380,00 e taxa de autorização de R$ 2.190,00.
+          </p>
+
+          <p>
+            Como valores e procedimentos podem ser atualizados, confirme a
+            GRU correta no momento do protocolo.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          23. O cliente que contrata uma empresa irregular também corre risco?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Sim. A legislação não trata somente de quem presta o serviço.
+            A IN prevê multa também para pessoa jurídica que contrata serviço
+            de segurança privada não autorizado.
+          </p>
+
+          <p>
+            Isso tende a fazer do alvará e da regularidade do fornecedor um
+            critério cada vez mais relevante em contratos e homologações.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          24. Qual é a multa para empresa envolvida em serviço clandestino?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            A IN 340 prevê multa de R$ 10.000,00 a R$ 30.000,00 para pessoa
+            jurídica de direito público ou privado que organizar, oferecer,
+            contratar, prestar ou executar serviço de segurança privada não
+            autorizado.
+          </p>
+
+          <p>
+            A aplicação depende do processo administrativo e do cenário
+            concreto.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          25. A PF pode mandar a empresa parar imediatamente?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Quando for caracterizada prestação clandestina de segurança
+            privada, a IN prevê auto de encerramento autoexecutável.
+          </p>
+
+          <p>
+            Nessa situação, a atividade irregular deve cessar a partir da
+            lavratura do auto. O processo administrativo posterior não funciona
+            como autorização provisória para continuar a atividade.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          26. O Sigma Cloud ajuda a empresa a cumprir todos os requisitos da PF?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            O Sigma Cloud apoia a operação tecnológica de monitoramento, mas
+            a conformidade regulatória envolve elementos que vão além do
+            software: estrutura societária, capital, profissionais habilitados,
+            instalações, veículos quando aplicáveis, documentação, CFTV da
+            própria empresa, processos internos, LGPD e autorização formal.
+          </p>
+
+          <p>
+            Nenhuma plataforma de software, isoladamente, substitui o processo
+            de autorização perante a Polícia Federal.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          27. Quem devo procurar para confirmar meu enquadramento?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Para enquadramento regulatório e societário, envolva o jurídico
+            e a contabilidade da empresa e, quando necessário, confirme
+            diretamente com a Polícia Federal.
+          </p>
+
+          <p>
+            A FAQ da PF informa o telefone <strong>(61) 2024-8172</strong>
+            e o e-mail
+            <strong>dpsp.cgcsp.dpa@pf.gov.br</strong>
+            para dúvidas relacionadas ao tema.
+          </p>
+        </div>
+      </details>
+
+
+      <details>
+        <summary>
+          28. O que faço primeiro se minha empresa recebeu a notificação agora?
+        </summary>
+
+        <div class="faq-answer">
+          <p>
+            Recomenda-se seguir esta ordem:
+          </p>
+
+          <ol>
+            <li>
+              Identificar o prazo e a hipótese descritos na notificação.
+            </li>
+            <li>
+              Confirmar se a empresa efetivamente presta a atividade indicada.
+            </li>
+            <li>
+              Separar contratos, CNAEs e objeto social.
+            </li>
+            <li>
+              Envolver contabilidade e jurídico.
+            </li>
+            <li>
+              Definir se o caminho será autorização de funcionamento ou
+              regularização/exclusão da atividade.
+            </li>
+            <li>
+              Não fazer alterações societárias sem observar a autorização
+              prévia da PF.
+            </li>
+            <li>
+              Protocolar a medida dentro do período definido.
+            </li>
+          </ol>
+        </div>
+      </details>
+
+    </div>
+  </section>
+
+
+  <!-- =====================================================
+       CHECKLIST EXECUTIVO
+       ===================================================== -->
+
+  <section>
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Checklist executivo
+      </div>
+
+      <h2>
+        O que sua empresa deveria revisar agora
+      </h2>
+    </div>
+
+
+    <div class="card callout">
+
+      <ol class="checklist">
+        <li>
+          CNAE 80.20-0/01 e demais CNAEs relacionados.
+        </li>
+
+        <li>
+          Objeto social e razão social.
+        </li>
+
+        <li>
+          Contratos de monitoramento, rastreamento, portaria remota e VTR.
+        </li>
+
+        <li>
+          Quais atividades são realmente executadas pela equipe.
+        </li>
+
+        <li>
+          Capital social e sua integralização.
+        </li>
+
+        <li>
+          Documentação dos sócios e administradores.
+        </li>
+
+        <li>
+          Quantidade e habilitação dos supervisores e operadores.
+        </li>
+
+        <li>
+          Técnicos externos, quando houver inspeção própria.
+        </li>
+
+        <li>
+          Veículos e comunicação da operação externa.
+        </li>
+
+        <li>
+          Central de monitoramento e redundância elétrica/de dados.
+        </li>
+
+        <li>
+          CFTV interno e externo das instalações.
+        </li>
+
+        <li>
+          Política de armazenamento de imagens e eventos.
+        </li>
+
+        <li>
+          Segurança de acessos, auditoria e backups.
+        </li>
+
+        <li>
+          LGPD e tratamento de imagens/dados pessoais.
+        </li>
+
+        <li>
+          Empresas terceirizadas utilizadas no monitoramento.
+        </li>
+
+        <li>
+          Notificações ou comunicações já recebidas da Polícia Federal.
+        </li>
+
+        <li>
+          Cadastro e acesso ao sistema GESP.
+        </li>
+      </ol>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       FONTES
+       ===================================================== -->
+
+  <section id="fontes">
+
+    <div class="section-heading">
+      <div class="section-kicker">
+        Referências
+      </div>
+
+      <h2>
+        Fontes utilizadas neste material
+      </h2>
+
+      <p>
+        Para questões de enquadramento e procedimento, priorize sempre as
+        fontes oficiais e versões mais recentes publicadas pela Polícia
+        Federal e pelo Governo Federal.
+      </p>
+    </div>
+
+
+    <div class="sources-grid">
+
+      <article class="card source-box">
+        <h3>Fontes oficiais prioritárias</h3>
+
+        <ol class="source-list">
+
+          <li>
+            <strong>Lei nº 14.967/2024 — Estatuto da Segurança Privada</strong><br>
+            <a
+              href="https://www2.camara.leg.br/legin/fed/lei/2024/lei-14967-9-setembro-2024-796214-publicacaooriginal-172963-pl.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar texto da Lei
+            </a>
+          </li>
+
+
+          <li>
+            <strong>Decreto nº 13.012/2026</strong><br>
+            <a
+              href="https://www2.camara.leg.br/legin/fed/decret/2026/decreto-13012-9-junho-2026-799250-publicacaooriginal-179787-pe.html"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar Decreto
+            </a>
+          </li>
+
+
+          <li>
+            <strong>IN DG/PF nº 340, de 31 de julho de 2026</strong><br>
+            <a
+              href="https://www.gov.br/pf/pt-br/assuntos/seguranca-privada/legislacao/leis-decreto-portarias-ins/instrucoes-normativas/instrucao-normativa-dg_pf-no-340-de-31-ulho-de-2026-dou-imprensa-nacional.pdf/view"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar IN no portal da Polícia Federal
+            </a>
+          </li>
+
+
+          <li>
+            <strong>
+              Polícia Federal — autorização para empresas de monitoramento
+            </strong><br>
+            <a
+              href="https://www.gov.br/pf/pt-br/assuntos/seguranca-privada/autorizacao-funcionamento-regularidade/autorizacao-de-funcionamento-para-empresas-de-monitoramento"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar orientação
+            </a>
+          </li>
+
+
+          <li>
+            <strong>Polícia Federal — dúvidas frequentes</strong><br>
+            <a
+              href="https://www.gov.br/pf/pt-br/assuntos/seguranca-privada/atendimento-duvidas-frequentes/duvidas-frequentes-seguranca-privada"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar FAQ
+            </a>
+          </li>
+
+
+          <li>
+            <strong>Polícia Federal — sistemas GESP</strong><br>
+            <a
+              href="https://www.gov.br/pf/pt-br/assuntos/seguranca-privada/sistemas-gesp/acesso-ao-sistema-gesp/sistemas-disponiveis-as-empresas"
+              target="_blank"
+              rel="noopener"
+            >
+              Consultar sistemas disponíveis
+            </a>
+          </li>
+
+        </ol>
+      </article>
+
+
+      <article class="card source-box">
+        <h3>Leituras complementares do setor</h3>
+
+        <ol class="source-list">
+
+          <li>
+            PV Assessoria Contábil — notificações da Polícia Federal<br>
+            <a
+              href="https://pvcontabilidade.com.br/policia-federal-comeca-a-notificar-empresas-de-monitoramento-e-gerenciamento-de-riscos-entenda-o-que-fazer/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir matéria
+            </a>
+          </li>
+
+
+          <li>
+            Portal Contábeis — novas regras e impactos<br>
+            <a
+              href="https://www.contabeis.com.br/noticias/79377/seguranca-privada-novas-regras-e-impactos-do-decreto/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir matéria
+            </a>
+          </li>
+
+
+          <li>
+            ABESE — regulamentação do Estatuto<br>
+            <a
+              href="https://www.abese.org.br/conteudos/regulamentacao-do-estatuto-da-seguranca-privada-e-assinada-e-redefine-mercado-bilionario-de-seguranca-eletronica-no-brasil"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+
+          <li>
+            Hares Consultoria — autorização de funcionamento<br>
+            <a
+              href="https://www.haresconsultoria.com.br/o-que-uma-empresa-de-monitoramento-precisa-para-pedir-autorizacao-de-funcionamento-na-policia-federal/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+
+          <li>
+            Hares Consultoria — monitoramento, portaria remota e segurança eletrônica<br>
+            <a
+              href="https://www.haresconsultoria.com.br/estatuto-da-seguranca-privada-o-que-muda-para-empresas-de-monitoramento-portaria-remota-e-seguranca-eletronica/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+
+          <li>
+            LegisWeb — IN DG/PF nº 340/2026<br>
+            <a
+              href="https://www.legisweb.com.br/legislacao/?id=498897"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir legislação
+            </a>
+          </li>
+
+
+          <li>
+            Omnia — novos procedimentos da PF<br>
+            <a
+              href="https://www.omniaonline.com.br/policia-federal-regulamenta-novos-procedimentos-para-empresas-e-profissionais-de-seguranca-privada-sgsso/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+
+          <li>
+            Legado da Segurança — segurança privada ou clandestinidade<br>
+            <a
+              href="https://legadodaseguranca.com.br/seguranca-privada-ou-clandestinidade/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+
+          <li>
+            Orsegups — impactos para contratantes<br>
+            <a
+              href="https://www.orsegups.com.br/estatuto-da-seguranca-privada-o-que-a-lei-14-967-muda-para-quem-contrata-servicos-de-seguranca/"
+              target="_blank"
+              rel="noopener"
+            >
+              Abrir conteúdo
+            </a>
+          </li>
+
+        </ol>
+      </article>
+
+    </div>
+
+
+    <div class="callout warning mt-20">
+      <h3>Nota sobre atualização das fontes</h3>
+
+      <p>
+        Algumas páginas institucionais foram publicadas durante diferentes
+        fases da regulamentação e podem conservar trechos referentes a etapas
+        anteriores da implementação.
+      </p>
+
+      <p>
+        Para procedimento atual, este material prioriza a Lei nº 14.967/2024,
+        o Decreto nº 13.012/2026, a IN DG/PF nº 340/2026, as informações
+        atuais do GESP e, principalmente, qualquer comunicação formal que a
+        empresa tenha recebido diretamente da Polícia Federal.
+      </p>
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       CONTATO PF
+       ===================================================== -->
+
+  <section>
+
+    <div class="card callout success">
+      <h3>
+        Canal informado pela Polícia Federal para dúvidas
+      </h3>
+
+      <p>
+        Telefone:
+        <strong>(61) 2024-8172</strong>
+        <br>
+
+        E-mail:
+        <strong>dpsp.cgcsp.dpa@pf.gov.br</strong>
+      </p>
+
+      <p class="small">
+        Consulte também a DELESP ou UCV responsável pela circunscrição
+        da sua empresa quando houver processo ou notificação específica.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- =======================================================
+     RODAPÉ
+     ======================================================= -->
+
+<footer>
+
+  <div class="container footer-main">
+
+    <div>
+      <div class="brand">
+        <span>segware</span>
+      </div>
+
+      <h2>
+        Tecnologia para operações cada vez mais seguras.
+      </h2>
+
+      <p>
+        Este conteúdo foi preparado como material de apoio para ajudar
+        clientes a compreenderem a nova realidade regulatória do setor de
+        monitoramento e segurança eletrônica.
+      </p>
+    </div>
+
+
+    <div class="footer-contact">
+      <strong>
+        Importante
+      </strong>
+
+      <p>
+        A Segware não substitui a Polícia Federal, a assessoria jurídica ou
+        contábil responsável pelo enquadramento e pela autorização de
+        funcionamento da sua empresa.
+      </p>
+
+      <p>
+        Em dúvidas relacionadas ao uso prático das soluções Segware,
+        procure o time de Sucesso do Cliente.
+      </p>
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+    <div class="container">
+      Material informativo • Atualizado em 15/09/2026 •
+      Consulte sempre a versão mais recente dos normativos oficiais.
+    </div>
+  </div>
+
+</footer>
+
+
+<script>
+/* =========================================================
+   FAQ — PESQUISA
+   ========================================================= */
+
+const faqSearch = document.getElementById("faqSearch");
+const faqItems = Array.from(
+  document.querySelectorAll("#faqList details")
+);
+
+faqSearch.addEventListener("input", function () {
+  const query = normalizeText(this.value);
+
+  faqItems.forEach(function (item) {
+    const content = normalizeText(item.innerText);
+    const match = content.includes(query);
+
+    item.classList.toggle(
+      "hidden-by-search",
+      !match
+    );
+
+    if (query.length > 2 && match) {
+      item.open = true;
+    }
+
+    if (!query) {
+      item.open = false;
+    }
+  });
+});
+
+
+function normalizeText(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+
+/* =========================================================
+   FAQ — ABRIR / FECHAR
+   ========================================================= */
+
+function toggleAllFaq(open) {
+  faqItems.forEach(function (item) {
+    if (!item.classList.contains("hidden-by-search")) {
+      item.open = open;
+    }
+  });
+}
+</script>
+
+</body>
+</html>
